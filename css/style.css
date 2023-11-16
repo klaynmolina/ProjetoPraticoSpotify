@@ -23,4 +23,44 @@ img {
     max-width: 100%;
 }
 
-/* RESET */
+body {
+    background-image: url(../img/showcase.webp);
+}
+
+/* CABEÇALHO */
+.logo-spotify {
+    min-width: 7vw;
+    max-width: 7vw;
+}
+
+.navbar {
+    opacity: 0.85;
+    background-color: #191414;
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover {
+    color: #1DB954 !important;
+}
+
+.navbar-toggler:hover {
+    border: none !important;
+}
+
+.container {
+    width: 60%;
+}
+
+.bar:hover {
+    color: #FFFFFF !important;
+}
+
+.baixar-link::after {
+    content: "";
+    border: 1px solid #FFFFFF;
+    margin-left: 15px;
+}
