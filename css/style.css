@@ -103,3 +103,98 @@ body {
     border: 1px solid #1DB954;
     background-color: transparent;
 }
+
+/* FOOTER */
+.rodape {
+    background-color: #000000;
+    border-radius: 0;
+    font-size: 0.8em;
+}
+
+.rodape p {
+    color: gray;
+}
+
+.rodape a {
+    color:#FFFFFF;
+}
+
+.rodape-container-pai {
+    width: 65vw;    
+}
+
+/* SECTION FOOTER COLUNAS */
+
+.footer-colunas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7%;
+    margin-bottom: 5%;  
+    padding-right: 5%;
+}
+
+.footer-coluna-empresa, .footer-coluna-comunidade, .footer-coluna-links-uteis {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer-coluna-rede-social {
+    display: flex;
+    font-size: 1.5rem;
+    height: 5vh;
+}
+
+.footer-coluna-rede-social i {
+    margin-right: 1vw;
+    color: #FFFFFF;
+}
+
+.footer-coluna-empresa a, .footer-coluna-comunidade a, .footer-coluna-links-uteis a {
+    margin-bottom: 5%;
+}
+.footer-coluna-empresa a:hover, .footer-coluna-comunidade a:hover, .footer-coluna-links-uteis a:hover, .footer-coluna-rede-social i:hover {
+    color: #1DB954;
+    cursor: pointer;
+}
+
+/* SECTION FOOTER END */
+
+.footer-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: end;
+    color: gray;
+    margin-bottom: 5%;
+}
+
+.footer-end-right {
+    display: flex;
+    align-items: end;
+}
+
+.footer-end-right a {
+    margin-right: 5%;
+    color: gray;
+}
+
+.footer-end-right a:hover {
+    color: #1DB954;
+}
+
+.footer-end-left {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.footer-end-lang, .footer-end-copyright {
+    display: flex;
+    justify-content: end;
+}
+
+.brasil-icon {
+    width: 20px;
+    margin-left: 10px;
+}
