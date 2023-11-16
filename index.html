@@ -32,15 +32,15 @@
 
     <!-- CABEÇALHO -->
     <header class="cabecalho">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img class="logo-spotify" src="img/logo.png" alt="Logo Spotify"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-theme="dark"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                <button id="navButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-theme="dark" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Premium</a>
@@ -130,6 +130,17 @@
         </div>
     </footer>
 
+    <script>
+        let navButton = document.getElementById('navButton');
+        let navbar = document.getElementById('navbar');
+        navButton.addEventListener('click', () => {
+            if (navbar.style.opacity === '0.95') {
+                navbar.style.opacity = '';
+            } else {
+                navbar.style.opacity = '0.95';
+            }
+        });
+    </script>
 </body>
 
 </html>

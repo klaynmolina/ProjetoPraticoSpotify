@@ -35,7 +35,7 @@ body {
 
 .navbar {
     opacity: 0.85;
-    background-color: #191414;
+    background-color: #000000;
 }
 
 .nav-link {
@@ -197,4 +197,148 @@ body {
 .brasil-icon {
     width: 20px;
     margin-left: 10px;
+}
+
+@media only screen 
+  and (device-width: 390px) 
+  and (device-height: 844px) {   
+    body {
+        background-color: #000000;
+    }
+    .corpo {
+        background-size: 180% !important;
+    }
+    .nav-link {
+        font-size: 1.9rem !important;
+    }
+}
+
+@media only screen 
+  and (device-width: 360px) 
+  and (device-height: 740px) {   
+    .corpo {
+        background-size: 170% !important;
+    }
+    .nav-link {
+        font-size: 1.45rem !important;
+    }
+}
+
+/* Muito Pequena */
+@media screen and (max-width:400px) {
+    .alinhamento-corpo {
+        height: 55vh !important;
+    }
+
+    .footer-end-right {
+        width: 120%;
+        margin-top: 10%;
+    }
+
+    .baixar-link::after {
+        display: none;
+    }
+}
+
+/* Pequena */
+@media screen and (max-width:600px) {
+    .nav-link {
+        font-size: 1.2rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .logo-spotify {
+        min-width: 30vw;
+        max-width: 30vw;
+    }
+
+    .baixar-link::after {
+        display: none;
+    }
+
+    body {
+        background-color: #000000;
+    }
+
+    .corpo {
+        text-align: center;
+        background-size: 150%;
+        background-position: center;
+    }
+
+    .alinhamento-corpo {
+        height: 43vh;
+    }
+
+    .corpo h1 {
+        font-size: 2em;
+        margin-top: 40%;
+    }
+
+    .corpo p {
+        width: 60%;
+        margin-bottom: 5%;
+    }
+
+    .btn {
+        width: 70vw;
+        font-size: large;
+    }
+
+
+    .logo-footer {
+        margin-top: 5%;
+        margin-bottom: 20%;
+    }
+
+    .rodape {
+        font-size: larger;
+    }
+
+    .footer-colunas {
+        display: block;
+    }
+
+    .footer-coluna-empresa, .footer-coluna-comunidade {
+        margin-bottom: 10%;
+    }
+
+    .footer-coluna-rede-social {
+        justify-content: center;
+    }
+
+    .footer-coluna-rede-social i {
+        margin-right: 5vw;
+        font-size: larger;
+    }
+
+    .footer-end {
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    .footer-end a {
+        margin-bottom: 5%;
+        
+    }
+    
+    .footer-end-right, .footer-end-left {
+        margin-bottom: 20%;
+        flex-direction: column;
+    }
+
+    .footer-end-right {
+        align-items: flex-start;
+    }
+
+    .footer-end-left {
+        align-items: center;
+        width: auto;
+    }
+
+    .footer-end-copyright {
+        width: auto;
+    }
 }
