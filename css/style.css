@@ -73,7 +73,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(0, 0, 0, 0.4);
-    background-blend-mode: color;     
+    background-blend-mode: color;
 }
 
 .alinhamento-corpo {
@@ -116,11 +116,11 @@ body {
 }
 
 .rodape a {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .rodape-container-pai {
-    width: 65vw;    
+    width: 65vw;
 }
 
 /* SECTION FOOTER COLUNAS */
@@ -129,7 +129,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin-top: 7%;
-    margin-bottom: 5%;  
+    margin-bottom: 5%;
     padding-right: 5%;
 }
 
@@ -153,6 +153,7 @@ body {
 .footer-coluna-empresa a, .footer-coluna-comunidade a, .footer-coluna-links-uteis a {
     margin-bottom: 5%;
 }
+
 .footer-coluna-empresa a:hover, .footer-coluna-comunidade a:hover, .footer-coluna-links-uteis a:hover, .footer-coluna-rede-social i:hover {
     color: #1DB954;
     cursor: pointer;
@@ -199,26 +200,25 @@ body {
     margin-left: 10px;
 }
 
-@media only screen 
-  and (device-width: 390px) 
-  and (device-height: 844px) {   
+@media only screen and (device-width: 390px) and (device-height: 844px) {
     body {
         background-color: #000000;
     }
+
     .corpo {
         background-size: 180% !important;
     }
+
     .nav-link {
         font-size: 1.9rem !important;
     }
 }
 
-@media only screen 
-  and (device-width: 360px) 
-  and (device-height: 740px) {   
+@media only screen and (device-width: 360px) and (device-height: 740px) {
     .corpo {
         background-size: 170% !important;
     }
+
     .nav-link {
         font-size: 1.45rem !important;
     }
@@ -287,7 +287,6 @@ body {
         font-size: large;
     }
 
-
     .logo-footer {
         margin-top: 5%;
         margin-bottom: 20%;
@@ -321,9 +320,9 @@ body {
 
     .footer-end a {
         margin-bottom: 5%;
-        
+
     }
-    
+
     .footer-end-right, .footer-end-left {
         margin-bottom: 20%;
         flex-direction: column;
@@ -335,6 +334,117 @@ body {
 
     .footer-end-left {
         align-items: center;
+        width: auto;
+    }
+
+    .footer-end-copyright {
+        width: auto;
+    }
+}
+
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 2) {
+    .nav-link {
+        font-size: 2.5rem !important;
+    }
+}
+
+/* Média */
+@media screen and (min-width:601px) and (max-width:1000px) {
+    .nav-link {
+        font-size: 2rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .logo-spotify {
+        min-width: 30vw;
+        max-width: 30vw;
+    }
+
+    .baixar-link::after {
+        display: none;
+    }
+
+    body {
+        background-color: #000000;
+    }
+
+    .corpo {
+        text-align: center;
+        background-size: 150%;
+        background-position: center;
+    }
+
+    .alinhamento-corpo {
+        height: 60vh;
+    }
+
+    .corpo h1 {
+        font-size: 3.5rem;
+        margin-top: 40%;
+    }
+
+    .corpo p {
+        width: 50%;
+        margin-bottom: 5%;
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 50vw;
+        font-size: x-large;
+    }
+
+
+    .logo-footer {
+        margin-top: 5%;
+        margin-bottom: 20%;
+    }
+
+    .rodape {
+        font-size: xx-large;
+    }
+
+    .footer-colunas {
+        display: block;
+    }
+
+    .footer-coluna-empresa, .footer-coluna-comunidade {
+        margin-bottom: 10%;
+    }
+
+    .footer-coluna-rede-social {
+        justify-content: center;
+    }
+
+    .footer-coluna-rede-social i {
+        margin-right: 5vw;
+        font-size: larger;
+    }
+
+    .footer-end {
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    .footer-end a {
+        margin-bottom: 5%;
+
+    }
+
+    .footer-end-right, .footer-end-left {
+        margin-bottom: 20%;
+        flex-direction: column;
+    }
+
+    .footer-end-right {
+        align-items: flex-start;
+    }
+    
+    .footer-end-left {
+        align-items: center;
+        margin-left: 15%;
         width: auto;
     }
 
