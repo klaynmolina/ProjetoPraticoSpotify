@@ -45,6 +45,7 @@ body {
 
 .nav-link:hover {
     color: #1DB954 !important;
+    transition: all 500ms ease;
 }
 
 .navbar-toggler:hover {
@@ -96,12 +97,12 @@ body {
     color: #FFFFFF;
     width: 20vw;
     border: none;
+    transition: all 500ms ease;
 }
 
 .btn:hover {
-    color: #1DB954;
-    border: 1px solid #1DB954;
-    background-color: transparent;
+    background-color: #1ed760;
+    transition: all 500ms ease;
 }
 
 /* FOOTER */
@@ -157,6 +158,7 @@ body {
 .footer-coluna-empresa a:hover, .footer-coluna-comunidade a:hover, .footer-coluna-links-uteis a:hover, .footer-coluna-rede-social i:hover {
     color: #1DB954;
     cursor: pointer;
+    transition: all 500ms ease;
 }
 
 /* SECTION FOOTER END */
@@ -182,6 +184,7 @@ body {
 
 .footer-end-right a:hover {
     color: #1DB954;
+    transition: all 500ms ease;
 }
 
 .footer-end-left {
